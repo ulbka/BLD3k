@@ -2,6 +2,7 @@ h1{
     font-family: 'Amatic SC', cursive;
     font-size: 50px;
     text-align: center;
+    padding-top: 100px;
 }
 body{
 background-color: #00A895;
@@ -9,4 +10,16 @@ background-color: #00A895;
 }
 .maininfo{
     text-align: center;
+    line-height: 200%;
+    font-family: 'Roboto', sans-serif;
+}
+a, a:visited{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.mehrinfo{
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
