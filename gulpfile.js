@@ -30,4 +30,7 @@ gulp.task('css', function () {
         .pipe(gulp.dest('dist'))
 });
 
-gulp.task('default', ['serve', 'html', 'js', 'css']);
+gulp.task('default', ['serve', 'html', 'js', 'css'], function(){
+    gulp.watch('index.html', ['html']);
+    gulp.watch('style.css', ['css']);
+});
