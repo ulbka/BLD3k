@@ -21,6 +21,7 @@ a, a:visited{
     text-align: center;
 }
 .buttons{
+    padding-bottom: 20px;
 
 }
 .menu-button:hover{
