@@ -8,9 +8,10 @@ a, a:visited{
 }
 .menu-button{
     display: inline-block;
-    height: 50px;
+    height: 130px;
+    width: 130px;
     font-size: 18px;
-    line-height: 50px;
+    line-height: 65px;
     color: #fff;
     cursor: pointer;
     border: #fff solid 2px;
@@ -19,18 +20,24 @@ a, a:visited{
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    border-radius: 50%;
+    margin: 15px;
+    padding-top: 30px;
 }
 .buttons{
-    padding-bottom: 20px;
-
+    padding-bottom: 50px;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
 }
 .menu-button:hover{
     background: #fff;
     color: #2EC4B6 !important;
     text-decoration: none;
 }
+
 .section-header{
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     padding: 20px;
@@ -40,9 +47,11 @@ a, a:visited{
      line-height: 200%;
      font-family: 'Roboto', sans-serif;
      color: #fff;
+     font-size: 15px;
  }
 .maininfo>a:hover{
     font-weight: bold;
+    color: yellow;
 }
 /* HEADER SECTION */
 #header{
@@ -58,44 +67,31 @@ h1 {
     padding-bottom: 70px;
 }
 /* TURNIER SECTION */
-#turnier{
-    background: #011627;
-    height: 400px;
+#turnier, #teams, #fun, #kontakt{
+    background: #2EC4B6;
+    height: auto;
+    color:#fff;
+    padding-bottom: 50px;
 }
 #turnier>.section-header{
     color: #fff !important;
 }
 /* TEAMS SECTION */
-#teams{
-    background: #FDFFFC;
-    height: 400px;
-    color: #000;
-}
 .teams-table{
-    color: #000;
     text-align: center;
     margin: 0 auto;
+    color: #fff;
 }
 td, th{
     padding: 10px 25px 0 25px !important;
     text-align: left;
+    font-family: 'Roboto', sans-serif;
+    #font-size: 15px;
 }
 /* FUN SECTION */
-#fun{
-    background: #FF9F1C;
-    height: 400px;
-    color: #fff;
-}
+
 /* KONTAKT SECTION */
-#kontakt{
-    background: #DD3030;
-    height: 400px;
-    color: #fff;
-}
-.maininfo >a:hover{
-    text-decoration: none;
-    color: #fff;
-}
+
 @media all and (max-width: 414px){
     #header{
         height: auto;
