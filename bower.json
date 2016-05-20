@@ -1,0 +1,24 @@
+{
+  "name": "bld3k",
+  "description": "turnier webseite",
+  "main": "index.html",
+  "authors": [
+    "bulliana"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ulbka/bld3k",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "angularjs#^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-scroll": "^1.0.0"
+  }
+}

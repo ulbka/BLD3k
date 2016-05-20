@@ -1,12 +1,102 @@
-h1{
-    font-family: 'Amatic SC', cursive;
-    font-size: 50px;
+body{
+    background-color: #2EC4B6;
+}
+a, a:visited{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.menu-button{
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    font-size: 18px;
+    line-height: 65px;
+    color: #fff;
+    cursor: pointer;
+    border: #fff solid 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 50%;
+    margin: 15px;
+    padding-top: 30px;
+}
+.buttons{
+    padding-bottom: 50px;
+    float: none;
+    margin: 0 auto;
     text-align: center;
 }
-body{
-background-color: #00A895;
-    color: #fff;
+.menu-button:hover{
+    background: #fff;
+    color: #2EC4B6 !important;
+    text-decoration: none;
+}
+
+.section-header{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    padding: 20px;
 }
 .maininfo{
     text-align: center;
+    line-height: 200%;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 15px;
+}
+.maininfo>a:hover{
+    font-weight: bold;
+    color: yellow;
+}
+/* HEADER SECTION */
+#header{
+    background: #2EC4B6;
+    height: auto;
+}
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 70px;
+    color: yellow;
+    padding-bottom: 70px;
+}
+/* TURNIER SECTION */
+#turnier, #teams, #fun, #kontakt{
+    background: #2EC4B6;
+    height: auto;
+    color:#fff;
+    padding-bottom: 50px;
+}
+#turnier>.section-header{
+    color: #fff !important;
+}
+/* TEAMS SECTION */
+.teams-table{
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+td, th{
+    padding: 10px 25px 0 25px !important;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    #font-size: 15px;
+}
+/* FUN SECTION */
+
+/* KONTAKT SECTION */
+
+@media all and (max-width: 414px){
+    #header{
+        height: auto;
+    }
+    h1 {
+        font-size: 50px;
+    }
 }
