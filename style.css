@@ -1,25 +1,105 @@
-h1{
-    font-family: 'Amatic SC', cursive;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 100px;
-}
 body{
-background-color: #00A895;
-    color: #fff;
-}
-.maininfo{
-    text-align: center;
-    line-height: 200%;
-    font-family: 'Roboto', sans-serif;
+    background-color: #2EC4B6;
 }
 a, a:visited{
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
-.mehrinfo{
+.menu-button{
+    display: inline-block;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+    border: #fff solid 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.buttons{
+
+}
+.menu-button:hover{
+    background: #fff;
+    color: #2EC4B6 !important;
+    text-decoration: none;
+}
+.section-header{
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.maininfo{
+     text-align: center;
+     line-height: 200%;
+     font-family: 'Roboto', sans-serif;
+     color: #fff;
+ }
+.maininfo>a:hover{
     font-weight: bold;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+}
+/* HEADER SECTION */
+#header{
+    background: #2EC4B6;
+    height: auto;
+}
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 70px;
+    color: yellow;
+    padding-bottom: 70px;
+}
+/* TURNIER SECTION */
+#turnier{
+    background: #011627;
+    height: 400px;
+}
+#turnier>.section-header{
+    color: #fff !important;
+}
+/* TEAMS SECTION */
+#teams{
+    background: #FDFFFC;
+    height: 400px;
+    color: #000;
+}
+.teams-table{
+    color: #000;
+    text-align: center;
+    margin: 0 auto;
+}
+td, th{
+    padding: 10px 25px 0 25px !important;
+    text-align: left;
+}
+/* FUN SECTION */
+#fun{
+    background: #FF9F1C;
+    height: 400px;
+    color: #fff;
+}
+/* KONTAKT SECTION */
+#kontakt{
+    background: #DD3030;
+    height: 400px;
+    color: #fff;
+}
+.maininfo >a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+@media all and (max-width: 414px){
+    #header{
+        height: auto;
+    }
+    h1 {
+        font-size: 50px;
+    }
 }
