@@ -1,20 +1,22 @@
 var gulp = require('gulp'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    bower = require('gulp-bower'),
+    mainBowerFiles = require('main-bower-files');
 
-gulp.task('serve', function (){
-    browserSync.init({
-        server: "./dist"
+gulp.task('browser-sync', function () {
+    var files = [
+        'dist/*.html',
+        'dist/*.css',
+        'dist/*.js'
+    ];
+    browserSync.init(files, {
+        server: {
+            baseDir: './dist'
+        }
     });
-    gulp.watch('index.html').on('change', browserSync.reload);
-    gulp.watch('style.css').on('change', browserSync.reload);
-    gulp.watch('script.js').on('change', browserSync.reload);
 });
 gulp.task('bower', function(){
-    return gulp.src(mainBowerFiles({
-            paths: {
-                bowerDirectory: 'bower_components'
-            }
-        }))
+    return gulp.src(mainBowerFiles())
         .pipe(gulp.dest('dist'))
 });
 gulp.task('js', function () {
@@ -29,8 +31,9 @@ gulp.task('css', function () {
     gulp.src('*.css')
         .pipe(gulp.dest('dist'))
 });
-
-gulp.task('default', ['serve', 'html', 'js', 'css'], function(){
-    gulp.watch('index.html', ['html']);
-    gulp.watch('style.css', ['css']);
+gulp.task('watch', function () {
+    gulp.watch("style.css", ['css']);
+    gulp.watch("index.html", ['html']);
+    gulp.watch("script.js", ['js']);
 });
+gulp.task('default', ['browser-sync', 'bower', 'html', 'js', 'css', 'watch']);
