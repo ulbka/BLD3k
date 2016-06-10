@@ -92,11 +92,41 @@ td, th{
 
 /* KONTAKT SECTION */
 
+/* BACK TO TOP BUTTON */
+a.back-to-top, a.back-to-top:hover{
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: fixed;
+    right: 20%;
+    bottom: 5%;
+    cursor: pointer;
+    color: #fff;
+}
 @media all and (max-width: 414px){
     #header{
         height: auto;
     }
     h1 {
         font-size: 50px;
+        padding: 30px;
+    }
+    .buttons{
+        display: none;
+    }
+    #fun{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    a.back-to-top, a.back-to-top:hover{
+        right: 10%;
+        bottom: 5%;
+        width: 15px;
+        height: 15px;
+        color: yellow;
     }
 }

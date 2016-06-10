@@ -12,7 +12,8 @@ gulp.task('browser-sync', function () {
     browserSync.init(files, {
         server: {
             baseDir: './dist'
-        }
+        },
+        browser: "google chrome"
     });
 });
 gulp.task('bower', function(){
